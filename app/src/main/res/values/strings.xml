@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RecyclerViewApp</string>
+    <string name="enter_search_text">Enter search text</string>
+    <string name="search">Search</string>
+    <string name="no_results">No results found</string>
+    <string name="cd_thumbnail">Thumbnail</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
