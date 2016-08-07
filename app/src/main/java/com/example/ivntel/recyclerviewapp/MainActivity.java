@@ -30,19 +30,13 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
-    //public class MainActivity extends AppCompatActivity {
     public static final String DEFAULT_SEARCH_TERM = "rock";
-
     public static final String TAG = MainActivity.class.getSimpleName();
     public static final String KEY_SONGS_RESPONSE = "KEY_SONGS_RESPONSE";
 
     //butterknife - associating xml id's to their java counterparts
-
     @Bind(R.id.search_text)
     EditText mSearchText;
-    //FOR LISTVIEW:
-    //@Bind(R.id.listview)
-    //ListView mListView;
     @Bind(R.id.recyclerview)
     RecyclerView mRecyclerView;
     @Bind(R.id.no_results)
@@ -50,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.progress_bar)
     ProgressBar mProgressBar;
 
-    //FOR RECYCLERVIEW:
     private LinearLayoutManager mLayoutManager;
     //the adapter that works with the array
     private SongsAdapter mAdapter;
@@ -83,12 +76,6 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new SongsAdapter(this, mSongs);
         mRecyclerView.setAdapter(mAdapter);
-        //FOR LISTVIEW:
-        //the adapter that adapts the array from this activity and puts it into this variable name
-        //mAdapter = new SongsAdapter(this, mSongs);
-        //puts the content from mAdapter into the listview
-        //mListView.setAdapter(mAdapter);
-
 
         mSearchText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -141,6 +128,4 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
 }

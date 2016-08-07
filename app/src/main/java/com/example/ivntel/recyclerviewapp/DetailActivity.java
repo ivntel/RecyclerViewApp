@@ -65,6 +65,4 @@ public class DetailActivity extends ActionBarActivity {
             }
         }
     }
-
-
 }
